@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garissa Flood Alert</title>
+    <title>Garissa Flood Alert System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-    <h1>Garissa Flood Aleart</h1>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#weather">Weather</a>
-        <a href="#reports">Flood Reports</a>
-        <a href="#safety">Safety Tips</a>
-    </nav>
-   </header>
-   <main>
-    <section id="home">
-        <h2>Garissa Flooding & Weather Alert System</h2>
-        <p>
-           Get weather information and report flooding in your area.
-        </p>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="images/magnifying-glass-icon-search-find-seek-icon_250841-969(1).jpg"width="20"></button><brs>
+        </div>
+        <div class="wheather">
+            <img src="images/dizzle.jpg"width="400" class="whether-icon">
 
-         <button id="check-weather">
-             Check Current Weather
-         </button>
-    </section>
-   </main>
+            <h1 class="temp">22&deg;c</h1>
+            <h2 class="city">Garissa</h2>
+
+            <div class="details">
+
+             <div class="col">
+             <img src="images/fosshy.png" width="220">
+
+            <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+            </div>
+            </div>
+            
+            <div class="col">
+                <img src="images/image.png">
+            </div>
+            <p class="wind">15 km/h</p>
+            <p>Wind </p>
+            </div>
+
+        </div>
+    </div>
+    
 </body>
 </html>

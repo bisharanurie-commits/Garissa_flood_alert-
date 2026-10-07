@@ -1,0 +1,11 @@
+{
+  "reports": [
+    {
+      "id": "1",
+      "name": "Ahmed",
+      "location": "Bulla Pesa",
+      "severity": "High",
+      "description": "Flood water has entered homes."
+    }
+  ]
+}
