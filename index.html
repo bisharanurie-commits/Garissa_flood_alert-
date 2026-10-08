@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garissa Flood Alert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button>
+                <img src="images/search-removebg-preview.png">
+            </button>
+        </div>
+
+      
+        <div class="weather">
+
+            <img src="images/sun_rainfall_image-removebg-preview.png"
+                 width="200"
+                 class="weather-icon">
+
+            <h1 class="temp">22&deg;C</h1>
+            <h2 class="city">Garissa</h2>
+
+
+            <div class="details">
+
+               
+                <div class="col">
+                    <img src="images/fosshy.png" width="220">
+
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                
+                <div class="col">
+                    <img src="images/image.png">
+
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flood-alert">
+            <div class="icon">⚠️</div>
+            <h2>Flood Alert Status</h2>
+            <p id="alert-message">
+                No flood warning at the moment.
+            </p>
+        </div>
+
+      
+        <div class="rainfall">
+            <div class="icon">🌧️</div>
+            <h2>Rainfall</h2>
+            <p id="rainfall">5 mm</p>
+        </div>
+
+    
+        <div class="flood-risk">
+            <div class="icon">🌊</div>
+            <h2>Flood Risk</h2>
+            <p id="flood-risk">LOW</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
