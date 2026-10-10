@@ -101,3 +101,42 @@ function getFloodReports() {
 }
 
 getFloodReports();
+
+
+const floodReportForm = document.getElementById("flood-report-form");
+
+floodReportForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const newReport = {
+        name: document.getElementById("report-name").value,
+        location: document.getElementById("report-location").value,
+        severity: document.getElementById("report-severity").value,
+        description: document.getElementById("report-description").value
+    };
+
+    fetch("http://localhost:3000/reports", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newReport)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Could not save the flood report");
+            }
+            return response.json();
+        })
+        .then(() => {
+            alert("Flood report submitted successfully!");
+
+            floodReportForm.reset();
+
+            getFloodReports();
+        })
+        .catch(error => {
+            console.error("Error saving flood report:", error);
+            alert("Could not submit the report. Please check that JSON Server is running.");
+        });
+});

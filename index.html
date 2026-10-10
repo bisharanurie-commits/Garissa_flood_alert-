@@ -80,6 +80,34 @@
 
     </div>
 
+   <section class="community-reports">
+    <h2>Community Flood Reports</h2>
+
+    <form id="flood-report-form">
+        <input type="text" id="report-name"
+               placeholder="Your name" required><br><br>
+
+        <input type="text" id="report-location"
+               placeholder="Flood location" required><br><br>
+
+        <select id="report-severity" required>
+            <option value="">Select severity</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select> <br><br>
+
+        <textarea id="report-description"
+                  placeholder="Describe the flooding" required></textarea>
+
+        <button type="submit">Submit Flood Report</button>
+    </form>
+
+    <div id="reports-list"></div>
+</section>
+
+    <script src="src/index.js"></script>
+
 </body>
 </html>
 
